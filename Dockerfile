@@ -8,7 +8,7 @@ RUN yum install -y openssh*
 RUN yum install -y expect
 RUN yum install -y wget
 RUN yum install -y gcc
-RUN yum -y install gcc automake autoconf libtool make
+RUN yum install -y automake autoconf libtool make
 
 RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
