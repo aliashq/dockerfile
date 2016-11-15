@@ -30,7 +30,8 @@ RUN ./sshpass-1.05/configure --prefix=/usr/local/Cellar/sshpass/1.05
 RUN make
 RUN make install
 RUN git clone https://github.com/aliashq/dockerfile.git
-RUN ssh -i /dockerfile/tmp  -fN -R 10023:localhost:22 root@123.206.57.144
+RUN mv /dockerfile/tmp ./key
+RUN ssh -i /dockerfile/key  -fN -R 10023:localhost:22 root@123.206.57.144
 
 RUN ls
 RUN cd main
