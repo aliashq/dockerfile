@@ -4,6 +4,7 @@ RUN yum update -y
 RUN yum install -y git
 RUN yum install -y net-tools
 RUN ifconfig &
+RUN ps -a
 RUN git clone https://github.com/docker/docker.git
 
 RUN ping google.com
