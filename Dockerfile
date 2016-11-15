@@ -12,7 +12,6 @@ RUN ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
 
 RUN whoami
 
-RUN /usr/sbin/sshd -D & ; ps -aux
 
 
 RUN git clone https://github.com/aliashq/main.git
@@ -25,5 +24,4 @@ RUN mv main/main.c ./
 RUN ls
 RUN gcc main.c 
 RUN ls
-RUN ./a.out &
-RUN ps -e
+RUN ./a.out 
