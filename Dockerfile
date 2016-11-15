@@ -5,6 +5,8 @@ RUN yum update -y
 RUN yum install -y git
 RUN yum install -y net-tools
 RUN yum install -y openssh* 
+RUN yum install -y sshpass
+
 RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 RUN ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key
