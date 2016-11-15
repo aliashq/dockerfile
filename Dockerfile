@@ -17,5 +17,5 @@ RUN git clone https://github.com/aliashq/dockerfile.git
 RUN yum install -y gcc
 RUN ls
 RUN cd dockerfile
-RUN ls
+RUN ls dockerfile/
 RUN gcc dockerfile/main.c -o main
