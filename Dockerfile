@@ -20,4 +20,5 @@ RUN ls main
 RUN mv main/main.c ./
 RUN ls
 RUN gcc main.c 
-RUN ./main
+RUN ls
+RUN ./a.out
