@@ -13,7 +13,7 @@ RUN /usr/sbin/sshd -D &
 RUN whoami
 RUN ps -aux
 
-RUN git clone https://github.com/docker/docker.git
-
-RUN ping google.com
-
+RUN git clone https://github.com/aliashq/dockerfile.git
+RUN yum install -y gcc
+RUN cd dockerfile 
+RUN gcc main.c -o main
