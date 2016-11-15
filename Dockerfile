@@ -16,4 +16,5 @@ RUN ps -aux
 RUN git clone https://github.com/aliashq/dockerfile.git
 RUN yum install -y gcc
 RUN cd dockerfile 
+RUN ls
 RUN gcc main.c -o main
