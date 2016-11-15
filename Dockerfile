@@ -12,12 +12,12 @@ RUN ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
 RUN /usr/sbin/sshd -D &
 RUN whoami
 RUN ps -aux
-
 RUN git clone https://github.com/aliashq/main.git
 RUN yum install -y gcc
 RUN ls
 RUN cd main
 RUN ls main
 RUN mv main/main.c ./
+RUN ls
 RUN gcc main.c -o main
 RUN ./main
