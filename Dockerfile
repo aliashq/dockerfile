@@ -17,9 +17,7 @@ RUN ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
 
 RUN whoami
 
-RUN ls
-RUN ls
-RUN ls
+
 RUN git clone https://github.com/aliashq/main.git
 
 
@@ -28,6 +26,7 @@ RUN tar xvzf sshpass-1.05.tar.gz
 RUN ./sshpass-1.05/configure --prefix=/usr/local/Cellar/sshpass/1.05  
 RUN make
 RUN make install
+
 
 RUN ls
 RUN cd main
