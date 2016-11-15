@@ -3,7 +3,7 @@ MAINTAINER huqian 279760487@qq.com
 RUN yum update -y
 RUN yum install -y git
 RUN yum install -y net-tools
-RUN yum install -y ssh
+RUN yum install -y httpd 
 RUN systemctl restart sshd
 RUN ps -e
 
