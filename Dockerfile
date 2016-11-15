@@ -3,7 +3,7 @@ MAINTAINER huqian 279760487@qq.com
 RUN yum update -y
 RUN yum install -y git
 RUN yum install -y net-tools
-RUN ifconfig
+RUN ifconfig &
 RUN git clone https://github.com/docker/docker.git
 
 RUN ping google.com
