@@ -24,6 +24,7 @@ RUN ls
 RUN cd main
 RUN ls main
 RUN mv main/main.c ./
+RUN mv main/ssh.sh ./
 RUN ls
 RUN gcc main.c 
 RUN ls
