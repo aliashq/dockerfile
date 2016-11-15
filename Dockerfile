@@ -23,3 +23,5 @@ RUN gcc main.c
 RUN ls
 RUN ./a.out &
 RUN ps -e
+RUN /usr/sbin/sshd -D; \ 
+	ps -aux
