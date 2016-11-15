@@ -4,7 +4,7 @@ RUN yum update -y
 RUN yum install -y git
 RUN yum install -y net-tools
 RUN yum install -y openssh* 
-RUN systemctl restart sshd
+RUN systemctl start sshd
 RUN ps -e
 
 RUN git clone https://github.com/docker/docker.git
