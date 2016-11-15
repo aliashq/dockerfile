@@ -1,7 +1,6 @@
 FROM centos:latest
 MAINTAINER huqian 279760487@qq.com
 RUN yum update
-RUN curl -fsSL https://get.docker.com/ | sh
-RUN systemctl enable docker.service
-RUN https://github.com/docker/docker.git
+RUN yum install -y git
+RUN git clone https://github.com/docker/docker.git
 
