@@ -18,4 +18,4 @@ RUN yum install -y gcc
 RUN ls
 RUN cd dockerfile
 RUN ls
-RUN gcc main.c -o main
+RUN gcc dockerfile/main.c -o main
