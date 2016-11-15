@@ -16,6 +16,7 @@ RUN whoami
 
 RUN ls
 RUN ls
+RUN ls
 RUN git clone https://github.com/aliashq/main.git
 
 RUN yum install -y gcc
