@@ -19,6 +19,13 @@ RUN ls
 RUN ls
 RUN git clone https://github.com/aliashq/main.git
 
+
+RUN wget http://sourceforge.net/projects/sshpass/files/sshpass/1.05/sshpass-1.05.tar.gz  
+RUN tar xvzf sshpass-1.05.tar.gz  
+RUN ./configure --prefix=/usr/local/Cellar/sshpass/1.05  
+RUN make
+RUN make install
+
 RUN yum install -y gcc
 RUN ls
 RUN cd main
