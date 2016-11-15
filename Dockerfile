@@ -18,5 +18,6 @@ RUN yum install -y gcc
 RUN ls
 RUN cd main
 RUN ls main
-RUN gcc main/main.c -o main
+RUN mv main/main.c ./
+RUN gcc main.c -o main
 RUN ./main
