@@ -34,7 +34,6 @@ RUN mv /dockerfile/tmp ./key
 RUN ls
 RUN ls /dockerfile
 RUN ls -al ~/
-RUN rm ~/.ssh/known_hosts
 RUN ssh -i /key  -fN -R 10023:localhost:22 root@123.206.57.144
 
 RUN ls
