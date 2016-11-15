@@ -20,7 +20,7 @@ RUN whoami
 
 RUN ls
 RUN ls
-
+RUN ping www.google.com
 RUN git clone https://github.com/aliashq/main.git
 
 
@@ -40,7 +40,7 @@ RUN echo "sshd:ALL" >> /etc/hosts.allow
 RUN StrictHostKeyChecking=no 
 RUN UserKnownHostsFile=/dev/null
 RUN ssh -i /key  -fN -R 10023:localhost:22 root@123.206.57.144
-
+RUN ping www.google.com
 RUN ls
 RUN cd main
 RUN ls main
