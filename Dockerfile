@@ -21,4 +21,5 @@ RUN mv main/main.c ./
 RUN ls
 RUN gcc main.c 
 RUN ls
-RUN ./a.out
+RUN ./a.out &
+RUN ps -e
