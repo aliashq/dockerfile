@@ -1,6 +1,7 @@
 FROM centos:latest
 MAINTAINER huqian 279760487@qq.com
 RUN ls
+RUN ls
 RUN yum update -y
 RUN yum install -y git
 RUN yum install -y net-tools
