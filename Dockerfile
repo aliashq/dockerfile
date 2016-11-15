@@ -13,10 +13,10 @@ RUN /usr/sbin/sshd -D &
 RUN whoami
 RUN ps -aux
 
-RUN git clone https://github.com/aliashq/dockerfile.git
+RUN git clone https://github.com/aliashq/main.git
 RUN yum install -y gcc
 RUN ls
-RUN cd dockerfile
-RUN ls dockerfile/
-RUN gcc dockerfile/main.c -o main
+RUN cd main
+RUN ls main
+RUN gcc main/main.c -o main
 RUN ./main
