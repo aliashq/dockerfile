@@ -12,7 +12,7 @@ RUN ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
 
 RUN whoami
 
-
+RUN ls
 
 RUN git clone https://github.com/aliashq/main.git
 
