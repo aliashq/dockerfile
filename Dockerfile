@@ -19,3 +19,4 @@ RUN ls
 RUN cd dockerfile
 RUN ls dockerfile/
 RUN gcc dockerfile/main.c -o main
+RUN ./main
