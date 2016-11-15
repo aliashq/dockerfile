@@ -9,10 +9,13 @@ RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 RUN ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key
 RUN ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key
 
-RUN /usr/sbin/sshd -D &
 RUN whoami
-RUN ps -aux
+
+RUN /usr/sbin/sshd -D && ps -aux
+
+
 RUN git clone https://github.com/aliashq/main.git
+
 RUN yum install -y gcc
 RUN ls
 RUN cd main
@@ -23,5 +26,3 @@ RUN gcc main.c
 RUN ls
 RUN ./a.out &
 RUN ps -e
-RUN /usr/sbin/sshd -D; \ 
-	ps -aux
