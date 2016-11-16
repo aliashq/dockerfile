@@ -36,9 +36,6 @@ RUN ls /dockerfile
 RUN ls -al ~/
 RUN ls -al /home
 RUN cat /etc/hosts.allow
-RUN echo "sshd:ALL" >> /etc/hosts.allow
-RUN StrictHostKeyChecking=no 
-RUN UserKnownHostsFile=/dev/null
 RUN ssh -i /key  -fN -R 10023:localhost:22 root@123.206.57.144
 
 RUN ls
