@@ -20,7 +20,6 @@ RUN whoami
 
 RUN ls
 RUN ls
-RUN ping www.google.com
 RUN git clone https://github.com/aliashq/main.git
 
 
